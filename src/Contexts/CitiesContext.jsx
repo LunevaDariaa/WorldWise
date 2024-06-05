@@ -5,7 +5,7 @@ const CitiesContext = createContext();
 function CitiesProvider({ children }) {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-
+  const [currentCity, setCurrentCity] = useState({});
   useEffect(function () {
     async function fetchCities() {
       try {
@@ -22,6 +22,19 @@ function CitiesProvider({ children }) {
     fetchCities();
   }, []);
 
+  async function getCity(id) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${BASE_URL}/cities/${id}`);
+      const data = await res.json();
+      setCurrentCity(data);
+    } catch {
+      alert("There was an error");
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   return (
     <CitiesContext.Provider
       value={{
@@ -29,6 +42,8 @@ function CitiesProvider({ children }) {
         onSetCities: setCities,
         isLoading,
         onSetIsLoading: setIsLoading,
+        currentCity,
+        getCity,
       }}
     >
       {children}
@@ -38,9 +53,11 @@ function CitiesProvider({ children }) {
 
 function useCities() {
   const context = useContext(CitiesContext);
+
+  //It will be undefined if the component not a child comp of the Provider
   if (context === undefined)
     throw new Error("Cities Contex was used outside of CityProvider");
   return context;
 }
 
-export { CitiesProvider };
+export { CitiesProvider, useCities };
