@@ -3,38 +3,86 @@
     {
       "cityName": "Lisbon",
       "country": "Portugal",
-      "emoji": "🇵🇹",
+      "emoji": "pt",
       "date": "2027-10-31T15:59:59.138Z",
       "notes": "My favorite city so far!",
       "position": {
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
       "country": "Spain",
-      "emoji": "🇪🇸",
+      "emoji": "es",
       "date": "2027-07-15T08:22:53.976Z",
       "notes": "",
       "position": {
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
       "country": "Germany",
-      "emoji": "🇩🇪",
+      "emoji": "de",
       "date": "2027-02-12T09:24:11.863Z",
       "notes": "Amazing 😃",
       "position": {
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "id": "e4a4",
+      "cityName": "Toledo",
+      "country": "Spain",
+      "emoji": "es",
+      "date": "2024-06-07T15:29:32.784Z",
+      "notes": "egrhtjy",
+      "position": {
+        "lat": "39.90275716166082",
+        "lng": "-4.010181427001954"
+      }
+    },
+    {
+      "id": "2c11",
+      "cityName": "Tamanghasset",
+      "country": "Algeria",
+      "emoji": "DZ",
+      "date": "2024-06-07T15:55:54.636Z",
+      "notes": "dfvdvs",
+      "position": {
+        "lat": "22.755920681486405",
+        "lng": "6.152343750000001"
+      }
+    },
+    {
+      "id": "d959",
+      "cityName": "Hamilton",
+      "country": "Canada",
+      "emoji": "CA",
+      "date": "2024-06-07T15:56:05.969Z",
+      "notes": "gdfn",
+      "position": {
+        "lat": "43.26620632572602",
+        "lng": "-79.84811782836915"
+      }
+    },
+    {
+      "id": "3a66",
+      "cityName": "Saint-Pal-de-Mons",
+      "country": "France",
+      "emoji": "FR",
+      "date": "2024-06-08T22:58:17.177Z",
+      "notes": "ghjkl",
+      "position": {
+        "lat": "45.213003555993964",
+        "lng": "4.262695312500001"
+      }
     }
   ]
 }
